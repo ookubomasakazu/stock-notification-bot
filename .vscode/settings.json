@@ -1,0 +1,7 @@
+{
+    "python.defaultInterpreterPath": "C:\\Users\\masakazu\\vsCode\\software\\Python_setting\\common-env\\Scripts\\python.exe",
+    "python.terminal.activateEnvironment": true,
+    "python.analysis.extraPaths": [
+        "C:\\Users\\masakazu\\vsCode\\software\\Python_setting\\common-env\\Lib\\site-packages"
+    ]
+}
