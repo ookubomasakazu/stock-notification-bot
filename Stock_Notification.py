@@ -222,8 +222,8 @@ def main():
     dc_list = []
 
     if TEST_MODE:
-        LINE_CHANNEL_ACCESS_TOKEN = "w1FUg1i7gGcpWcQit9UO1F2e8UZ4JU//Y9Fdf9Xz0YY7TufHU+WoaJrlNK5/AFRP9CdZrKUekXIxAdx7ttS0AjmQ0WTw7WGObcYaPiPQqKAwHxVPt6seW2bmJRJwi1XC/kgVCK2PUz0WpWA1j6/+OAdB04t89/1O/w1cDnyilFU="
-        USER_ID = "U73d939f9d0ae9d6d6c92f925c112de8a"
+        CHANNEL_ACCESS_TOKEN = os.environ["LINE_CHANNEL_ACCESS_TOKEN"]
+        USER_ID = os.environ["USER_ID"]
 
         # import requests
 
