@@ -11,7 +11,7 @@ jobs:
 
     env:
       LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
-      USER_ID: ${{ secrets.USER_ID }}
+      LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
 
     steps:
       - uses: actions/checkout@v4
