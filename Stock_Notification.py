@@ -222,20 +222,19 @@ def main():
     dc_list = []
 
     if TEST_MODE:
-        CHANNEL_ACCESS_TOKEN = os.environ["LINE_CHANNEL_ACCESS_TOKEN"]
-        USER_ID = os.environ["USER_ID"]
 
-        # import requests
+        token = os.environ["LINE_CHANNEL_ACCESS_TOKEN"]
+        user_id = os.environ["LINE_USER_ID"]
 
         url = "https://api.line.me/v2/bot/message/push"
 
         headers = {
-            "Authorization": f"Bearer {LINE_CHANNEL_ACCESS_TOKEN}",
+            "Authorization": f"Bearer {token}",
             "Content-Type": "application/json"
         }
 
         data = {
-            "to": USER_ID,
+            "to": user_id,
             "messages": [
                 {
                     "type": "text",
@@ -245,7 +244,7 @@ def main():
         }
 
         requests.post(url, headers=headers, json=data)
-
+        
     for symbol in WATCHLIST:
 
         print(f"Processing {symbol}")
